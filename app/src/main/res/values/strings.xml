@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Reddit2go</string>
+
+    <string name="noinput">Please enter the subreddit name and the amount of posts to download in the boxes below.</string>
+    <string name="failed">Download failed.</string>
+    <string name="loading">Loading...</string>
+    <string name="done">Download successful.</string>
+    <string name="subnamehint">Subreddit name</string>
+    <string name="download">Download</string>
+    <string name="postsamount">Amount of posts</string>
+    <string name="noinputtoast">Please enter the subreddit name and the amount of posts to download.</string>
+
+    <string name="newradio">New</string>
+    <string name="hotradio">Hot</string>
+    <string name="topradio">Top</string>
+    <string name="hourradio">Past hour</string>
+    <string name="dayradio">Past day</string>
+    <string name="weekradio">Past week</string>
+    <string name="monthradio">Past month</string>
+    <string name="yearradio">Past year</string>
+    <string name="allradio">All time</string>
+    <string name="sortby">Sort by:</string>
+
+    <string name="latei">loading...</string>
+
 </resources>
