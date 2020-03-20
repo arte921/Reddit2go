@@ -1,0 +1,2 @@
+rootProject.name='Reddit2go'
+include ':app'
