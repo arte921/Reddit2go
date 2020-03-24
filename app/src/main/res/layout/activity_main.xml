@@ -88,7 +88,6 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:checkedButton="@id/hotradio"
-        android:onClick="onSortChanged"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
@@ -96,19 +95,22 @@
             android:id="@+id/newradio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/topradio" />
+            android:onClick="onSortChanged"
+            android:text="@string/newradio" />
 
         <RadioButton
             android:id="@+id/hotradio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onSortChanged"
             android:text="@string/hotradio" />
 
         <RadioButton
             android:id="@+id/topradio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/newradio" />
+            android:onClick="onSortChanged"
+            android:text="@string/topradio" />
     </RadioGroup>
 
     <RadioGroup
@@ -119,7 +121,6 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:checkedButton="@id/allradio"
-        android:onClick="onTimeChanged"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/totalprogress"
         tools:visibility="invisible">
@@ -128,6 +129,7 @@
             android:id="@+id/hourradio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onTimeChanged"
             android:text="@string/hourradio" />
 
         <RadioButton
@@ -141,18 +143,21 @@
             android:id="@+id/weekradio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onTimeChanged"
             android:text="@string/weekradio" />
 
         <RadioButton
             android:id="@+id/monthradio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onTimeChanged"
             android:text="@string/monthradio" />
 
         <RadioButton
             android:id="@+id/yearradio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onTimeChanged"
             android:text="@string/yearradio" />
 
         <RadioButton
@@ -160,6 +165,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
+            android:onClick="onTimeChanged"
             android:text="@string/allradio" />
     </RadioGroup>
 

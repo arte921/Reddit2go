@@ -1,38 +1,6 @@
 package arte921.reddit2go
 
-import android.Manifest.permission.WRITE_EXTERNAL_STORAGE
-import android.app.DownloadManager
-import android.content.BroadcastReceiver
-import android.content.Context
-import android.content.Intent
-import android.content.IntentFilter
-import android.content.pm.PackageManager
-import android.net.Uri
-import android.os.Bundle
-import android.os.Environment
-import android.util.Log
-import android.view.View
-import android.widget.RadioButton
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
-import com.android.volley.Request
-import com.android.volley.RequestQueue
-import com.android.volley.Response
-import com.android.volley.toolbox.BasicNetwork
-import com.android.volley.toolbox.DiskBasedCache
-import com.android.volley.toolbox.HurlStack
-import com.android.volley.toolbox.JsonObjectRequest
-import kotlinx.android.synthetic.main.activity_main.*
-import org.json.JSONArray
-import org.json.JSONObject
-import java.io.File
-import java.lang.Math.random
-
-
-
-class MainActivity : AppCompatActivity() {
+class DownloadActivity {
     lateinit var queue: RequestQueue
     lateinit var json: JSONArray
     var status = LOADING
@@ -226,6 +194,4 @@ class MainActivity : AppCompatActivity() {
 
         queue = RequestQueue(DiskBasedCache(cacheDir,1024*1024), BasicNetwork(HurlStack())).apply{start()}
         registerReceiver(onComplete, IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE))
-
-    }
 }
